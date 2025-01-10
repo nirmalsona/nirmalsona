@@ -1,0 +1,13 @@
+---
+# tasks file for role/nirmalnginx
+
+ - name: Install nginx package
+   yum:
+    name: nginx
+    state: present
+ - name: start nginx service
+   systemd:
+    name: nginx
+    state: started  
+      
+
